@@ -13,9 +13,9 @@ const App = () => {
   return (
     <>
       <Navbar></Navbar>
+      console.log('hello');
       <Firstpage />
       <OurSolutions />
-
       <Routes>
         <Route path="/Solutions" element={<Solutions />} />
         <Route path="/Services" element={<Services />} />
