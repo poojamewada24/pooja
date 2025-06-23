@@ -94,11 +94,11 @@ const Firstpage = () => {
           </div>
 
           {/* Image Section */}
-          <div className="lg:w-1/2 w-full flex justify-center p-4">
+          <div className="lg:w-1/2  flex justify-center p-4">
             <img
-              src="src/img/white-background-designify.png"
+              src="src/assets/mn-removebg-preview.png"
               alt="hero"
-              className="w-full max-w-md"
+              className="w-full max-w-md h-[100%]"
             />
           </div>
         </div>
