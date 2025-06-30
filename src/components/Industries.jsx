@@ -8,6 +8,8 @@ const Industries = () => {
     "https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2Foil%26gas.png&w=640&q=75",
     "https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2Fautomated-packaging-line-efficiency-production%201.png&w=640&q=75",
     "https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2Finsurance.png&w=640&q=75",
+    "https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2Finsurance.png&w=640&q=75",
+    "https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2Finsurance.png&w=640&q=75",
   ];
   const settings = {
     infinite: true,
@@ -15,7 +17,7 @@ const Industries = () => {
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 200,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     responsive: [
       {
@@ -45,35 +47,12 @@ const Industries = () => {
           disrupt.
         </p>
 
-        {/* Images Grid
-        <div className="flex   md:flex-row  flex-col  mt-8">
-          <img
-            className="w-full max-w-[300px] "
-            src="https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2FFMGC%20(1).png&w=640&q=75"
-            alt="FMCG"
-          />
-          <img
-            className="w-full max-w-[300px] "
-            src="https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2Foil%26gas.png&w=640&q=75"
-            alt="Oil and Gas"
-          />
-          <img
-            className="w-full max-w-[300px] "
-            src="https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2Fautomated-packaging-line-efficiency-production%201.png&w=640&q=75"
-            alt="Packaging"
-          />
-          <img
-            className="w-full max-w-[300px] "
-            src="https://www.linkfields.com/_next/image?url=https%3A%2F%2Fimages-linkfields-poc.s3.eu-west-2.amazonaws.com%2Finsurance.png&w=640&q=75"
-            alt="Insurance"
-          /> */}
-        {/* </div> */}
-        <div className="md:w-1/2">
+        <div className="w-full">
           <Slider {...settings}>
             {images.map((img, index) => (
               <div key={index} className="px-2">
                 <img
-                  className="h-80 w-full object-contain transform hover:scale-105 transition duration-300"
+                  className="h-100 w-full object-contain transform hover:scale-105 transition duration-300"
                   src={img}
                   alt={`Slide ${index + 1}`}
                 />

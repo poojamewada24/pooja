@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 import Firstpage from "./Firstpage";
+import Challenge from "./Challenge";
 import OurSolutions from "./OurSolutions";
 import OurServices from "./OurServices";
+import DigitalVision from "./DigitalVision";
 import Industries from "./Industries";
 import Excellence from "./Excellence";
 import GrowingCompany from "./GrowingCompany";
@@ -14,8 +16,10 @@ function HomePage() {
   return (
     <div>
       <Firstpage />
+      <Challenge />
       <OurSolutions />
       <OurServices />
+      <DigitalVision />
       <Industries />
       <Excellence />
       <GrowingCompany />
@@ -24,7 +28,7 @@ function HomePage() {
       <ContactUs />
       <Followus />
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
